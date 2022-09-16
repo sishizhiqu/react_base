@@ -1,0 +1,28 @@
+.countWrap{
+    margin: 30px 10px 20px;
+    width: 480px;
+    overflow: hidden;
+  }
+  .checkAll{
+    float: left;
+    height: 25px;
+    line-height: 20px;
+  }
+  .count{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-left: 20px;
+  }
+  .removeDone{
+    float: right;
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    background: #e34f4f;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

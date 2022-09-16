@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 解决路由多级路径丢失样式的问题的三个办法 -->
+    <!-- 1.去除/前面的. -->
+    <!-- <link rel="stylesheet" href="/css/bootstrap.css"> -->
+    <!-- 2.使用%PUBLIC_URL% 仅限于React脚手架 -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.css">
+    <!-- 3.使用HashRouter -->
+    <style>
+        .demo{
+            background-color: orange !important;
+            color: gray !important;
+            font-weight: bold !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>

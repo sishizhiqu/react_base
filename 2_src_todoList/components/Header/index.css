@@ -1,0 +1,12 @@
+.addTodo{
+    width: 478px;
+    height: 30px;
+    border: 1px solid #eee;
+    margin: 10px;
+    border-radius: 5px;
+    outline: none;
+  }
+  .addTodo:focus{
+    border: 1px solid #71aeef;
+    box-shadow: 1px 1px 1px #c7d0d9;
+  }

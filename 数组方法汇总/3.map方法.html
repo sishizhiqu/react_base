@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            语法： arr.map((item,index)=>{return 处理})
+
+                返回值：返回一个对每一个item做了相同处理的新数组
+        
+        */
+
+        let arr = [1,2,3,4,5,6,7,8,9]
+
+        //每一个数乘以2
+        console.log(arr.map((value)=>{
+            return value * 2
+        }))
+
+
+        let obj = {id:1,name:'Aa',age:16}
+        //扩展运算符
+        newObj = {...obj, age:20}
+        console.log(newObj);
+    </script>
+</body>
+</html>

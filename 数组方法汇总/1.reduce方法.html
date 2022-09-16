@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            数组的reduce方法
+                语法：
+                    arr.reduce((preValue,curent,index,arr) => {},initialValue)
+
+                    arr:当前数组
+                    preValue:第一次执行回调时为给定的初始值initialValue,以后是上一次执行回调时的返回值
+                        备注：若没有initialValue，则第一次的preValue值是数组中第一个元素
+                    current：表示当前正在处理的元素
+                    index：正在处理的元素的索引，若传入了initialValue，第一次则为0，否则为1
+                    array：当前操作的数组（就是arr）
+                    initialValue： 初始值。一般做数学时设置为0，若为筛选最值时可以不传
+                返回值：
+                    返回的是最后一次执行回调的结果
+
+
+
+        
+        
+        */
+
+
+        let arr = [1,2,3,4,5,6,7,8,9,10]
+
+        //数组求和
+        const sum = arr.reduce((preValue,current)=>{
+            return preValue+current
+        })
+        console.log(sum)
+
+        //数组中所有偶数的和（条件求和）
+        const result = arr.reduce((preValue,current)=>{
+            return preValue + (current % 2 === 0 ? current : 0)
+        },0)
+        console.log(result)
+
+        //数组中偶数有几个（条件统计）
+        const count = arr.reduce((preValue,current)=>{
+            return preValue + (current % 2 === 0 ? 1 : 0)
+        },0)
+        console.log(count)
+
+        //数组中的最小值
+        const min = arr.reduce((preValue,current)=>{
+            return preValue > current ? current : preValue
+        })
+        console.log(min)
+    </script>
+</body>
+</html>
